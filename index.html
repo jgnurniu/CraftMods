@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CraftMods — Premium Minecraft Mods</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar"></nav>
+
+<!-- PAGE -->
+<main class="page">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bloom"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-dot"></span>
+        <span>The Premium Minecraft Mod Marketplace</span>
+      </div>
+      <h1>Elevate Your<br/><span class="text-gradient">Minecraft Experience</span></h1>
+      <p>Discover hand-crafted mods built by top creators. From performance boosts to epic dimensions — find, purchase, and install everything in one place.</p>
+      <div class="hero-btns">
+        <a href="catalog.html" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          Browse Catalog
+        </a>
+        <a href="login.html" class="btn-secondary">
+          Get Started Free
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-grid" id="stats-row">
+    <!-- populated by JS -->
+    <div class="stat-card"><div class="shimmer" style="width:40px;height:16px;border-radius:4px;"></div><div class="shimmer" style="width:60px;height:16px;border-radius:4px;margin-top:8px;"></div><div class="shimmer" style="width:80px;height:10px;border-radius:4px;margin-top:4px;"></div></div>
+    <div class="stat-card"><div class="shimmer" style="width:40px;height:16px;border-radius:4px;"></div><div class="shimmer" style="width:60px;height:16px;border-radius:4px;margin-top:8px;"></div><div class="shimmer" style="width:80px;height:10px;border-radius:4px;margin-top:4px;"></div></div>
+    <div class="stat-card"><div class="shimmer" style="width:40px;height:16px;border-radius:4px;"></div><div class="shimmer" style="width:60px;height:16px;border-radius:4px;margin-top:8px;"></div><div class="shimmer" style="width:80px;height:10px;border-radius:4px;margin-top:4px;"></div></div>
+    <div class="stat-card"><div class="shimmer" style="width:40px;height:16px;border-radius:4px;"></div><div class="shimmer" style="width:60px;height:16px;border-radius:4px;margin-top:8px;"></div><div class="shimmer" style="width:80px;height:10px;border-radius:4px;margin-top:4px;"></div></div>
+  </div>
+
+  <!-- FEATURED MODS -->
+  <div class="container pb-16">
+    <div class="section-header mb-6">
+      <div>
+        <h2 class="section-title">Featured Mods</h2>
+        <p class="section-sub">Top-rated mods loved by the community</p>
+      </div>
+      <a href="catalog.html" class="view-all">
+        View all
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="mods-grid" id="featured-grid">
+      <!-- skeleton placeholders -->
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <div class="container pb-24">
+    <div class="section-header mb-6">
+      <div>
+        <h2 class="section-title">Browse by Category</h2>
+        <p class="section-sub">Find exactly what you're looking for</p>
+      </div>
+    </div>
+    <div class="categories-grid">
+      <a href="catalog.html?cat=Performance" class="cat-pill">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="hsl(142 71% 45%)" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+        <span class="cat-pill-name">Performance</span>
+        <span class="cat-pill-count">Optimization mods</span>
+      </a>
+      <a href="catalog.html?cat=Tech" class="cat-pill">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="hsl(48 96% 60%)" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+        <span class="cat-pill-name">Tech</span>
+        <span class="cat-pill-count">Machines & automation</span>
+      </a>
+      <a href="catalog.html?cat=Magic" class="cat-pill">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="hsl(270 76% 70%)" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+        <span class="cat-pill-name">Magic</span>
+        <span class="cat-pill-count">Spells & rituals</span>
+      </a>
+      <a href="catalog.html?cat=Adventure" class="cat-pill">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="hsl(25 95% 65%)" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+        <span class="cat-pill-name">Adventure</span>
+        <span class="cat-pill-count">Bosses & dimensions</span>
+      </a>
+      <a href="catalog.html?cat=Building" class="cat-pill">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="hsl(215 16% 70%)" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span class="cat-pill-name">Building</span>
+        <span class="cat-pill-count">Creative & decor</span>
+      </a>
+      <a href="catalog.html?cat=Utility" class="cat-pill">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="hsl(213 94% 68%)" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        <span class="cat-pill-name">Utility</span>
+        <span class="cat-pill-count">QoL & tools</span>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2025 <a href="index.html">CraftMods</a>. Built for the community.</p>
+</footer>
+
+<!-- PURCHASE MODAL -->
+<div class="modal-overlay hidden" id="purchase-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <div>
+        <div class="modal-title">Complete Purchase</div>
+        <div class="modal-sub">Secure checkout</div>
+      </div>
+      <button class="modal-close" id="btn-cancel">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-mod-preview">
+        <div class="modal-mod-img" id="modal-mod-img"></div>
+        <div class="modal-mod-info">
+          <div class="modal-mod-title" id="modal-mod-title"></div>
+          <div class="modal-mod-author" id="modal-mod-author"></div>
+          <div class="modal-mod-price" id="modal-mod-price"></div>
+        </div>
+      </div>
+      <div>
+        <label class="form-label">Card Number</label>
+        <div style="position:relative;">
+          <input class="input-fake" type="text" value="•••• •••• •••• ••••" readonly style="padding-right:40px;"/>
+          <span style="position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--muted);width:16px;height:16px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+          </span>
+        </div>
+      </div>
+      <div class="input-grid">
+        <div>
+          <label class="form-label">Expiry</label>
+          <input class="input-fake" type="text" value="••/••" readonly/>
+        </div>
+        <div>
+          <label class="form-label">CVV</label>
+          <input class="input-fake" type="text" value="•••" readonly/>
+        </div>
+      </div>
+      <div class="modal-lock">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Demo mode — no real charge will occur.
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-cancel" id="btn-cancel2">Cancel</button>
+      <button class="btn-confirm" id="btn-confirm-pay">Pay</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast-container" id="toast-container"></div>
+<script src="js/app.js"></script>
+<script>
+  // wire secondary cancel button
+  document.getElementById('btn-cancel2')?.addEventListener('click', closePurchaseModal);
+  // handle category pill links from catalog
+  document.querySelectorAll('.cat-pill').forEach(a => {
+    a.addEventListener('click', e => {
+      // let default href navigate
+    });
+  });
+</script>
+</body>
+</html>

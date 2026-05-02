@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mod Detail — CraftMods</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<nav class="navbar" id="navbar"></nav>
+
+<main class="page">
+  <div id="mod-detail-root">
+    <div style="display:flex;align-items:center;justify-content:center;min-height:60vh;">
+      <p class="text-muted">Loading mod…</p>
+    </div>
+  </div>
+</main>
+
+<!-- PURCHASE MODAL -->
+<div class="modal-overlay hidden" id="purchase-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <div>
+        <div class="modal-title">Complete Purchase</div>
+        <div class="modal-sub">Secure checkout</div>
+      </div>
+      <button class="modal-close" id="btn-cancel">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-mod-preview">
+        <div class="modal-mod-img" id="modal-mod-img"></div>
+        <div class="modal-mod-info">
+          <div class="modal-mod-title" id="modal-mod-title"></div>
+          <div class="modal-mod-author" id="modal-mod-author"></div>
+          <div class="modal-mod-price" id="modal-mod-price"></div>
+        </div>
+      </div>
+      <div>
+        <label class="form-label">Card Number</label>
+        <div style="position:relative;">
+          <input class="input-fake" type="text" value="•••• •••• •••• ••••" readonly style="padding-right:40px;"/>
+          <span style="position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--muted);width:16px;height:16px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div class="input-grid">
+        <div><label class="form-label">Expiry</label><input class="input-fake" type="text" value="••/••" readonly/></div>
+        <div><label class="form-label">CVV</label><input class="input-fake" type="text" value="•••" readonly/></div>
+      </div>
+      <div class="modal-lock">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        </svg>
+        Demo mode — no real charge will occur.
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-cancel" id="btn-cancel2">Cancel</button>
+      <button class="btn-confirm" id="btn-confirm-pay">Pay</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2025 <a href="index.html">CraftMods</a>. Built for the community.</p>
+</footer>
+
+<div class="toast-container" id="toast-container"></div>
+<script src="js/app.js"></script>
+<script>
+  document.getElementById('btn-cancel2')?.addEventListener('click', closePurchaseModal);
+</script>
+</body>
+</html>
